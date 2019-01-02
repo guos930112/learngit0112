@@ -16,3 +16,14 @@ def bubbl_sort(lst):
             if lst[j]>lst[j+1]:
                 lst[j],lst[j+1]=lst[j+1],lst[j]
     return lst
+
+def quick_sort(lst):
+    if len(lst)<2:
+        return lst
+    else:
+        baseval=lst[0]
+        less=[l for l in lst[1:] if l<baseval]
+        equal=[e for e in lst if e==baseval]
+        greater=[g for g in lst[1:] if g>baseval]
+    return quick_sort(less)+equal+quick_sort(greater)
+
