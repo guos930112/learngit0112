@@ -43,3 +43,9 @@ def gen_decorator(f):
         _thread.start_new_thread(fun,(r,))
     return wrapper
 
+def long_io():
+    print('开始执行io操作了')
+    time.sleep(5)
+    print('io操作执行完成')
+
+
