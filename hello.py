@@ -74,3 +74,9 @@ def req_a():
     time.sleep(2)
     print('请求a执行完成')
 
+def req_b():
+    print('请求b开始执行')
+    import time
+    time.sleep(5)
+    print('请求b执行完毕')
+   
