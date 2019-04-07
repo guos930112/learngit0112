@@ -27,4 +27,6 @@ calc = foldl f [] . words
     f xs y = read y : xs
 ```
 
+def func():
+    return "guos"
 
