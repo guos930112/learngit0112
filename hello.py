@@ -80,4 +80,5 @@ def req_b():
     time.sleep(5)
     print('请求b执行完毕')
     print('hello')
+    return 'world'
 
