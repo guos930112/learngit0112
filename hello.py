@@ -48,4 +48,11 @@ def long_io():
     time.sleep(5)
     print('io操作执行完成')
 
-
+def insert_sort(lst):
+    for i in range(len(lst)-1):
+        index = i
+        for j in range(i+1,len(lst)):
+            if lst[index] > lst[j]:
+                index = j
+        lst[i],lst[index] = lst[index],lst[j]
+    return lst
