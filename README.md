@@ -7,5 +7,12 @@ def func():
 function printlen():
     console.log('hello world')
 ```
-
+```go
+    Run code
+    package main
+    import "fmt"
+    func main() {
+            fmt.Println("hello world")
+    }
+```
 
