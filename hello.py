@@ -56,3 +56,10 @@ def insert_sort(lst):
                 index = j
         lst[i],lst[index] = lst[index],lst[j]
     return lst
+
+def req_a():
+    print('请求a开始执行')
+    import time
+    time.sleep(2)
+    print('请求a执行完成')
+
