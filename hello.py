@@ -67,3 +67,10 @@ def insert_sort(lst):
             i = i - 1
         lst[i+1] = key
     return lst
+
+def req_a():
+    print('请求a开始执行')
+    import time
+    time.sleep(2)
+    print('请求a执行完成')
+
