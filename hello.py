@@ -27,3 +27,25 @@ def quick_sort(lst):
         greater=[g for g in lst[1:] if g>baseval]
     return quick_sort(less)+equal+quick_sort(greater)
 
+import time
+import _thread
+
+def gen_decorator(f):
+    def wrapper(*args,**kwargs):
+        gen_f = f()
+        r = next(gen_f)
+        def fun(g):
+            ret = next(g)
+            try:
+                gen_f.send(ret)
+            except StopIteration
+                pass
+        _thread.start_new_thread(fun,(r,))
+    return wrapper
+
+def long_io():
+    print('开始执行io操作了')
+    time.sleep(5)
+    print('io操作执行完成')
+
+
